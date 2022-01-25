@@ -1,0 +1,109 @@
+@import"_variables.scss";
+/* -------------------EJERCICIO DE EXTEND----------------- */
+.contenedor{
+    color: $fondo-azul3;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-top: 5em;
+}
+.titulo-encima{
+    width: 15em;
+    height: 2em;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    background-color: $fondo-azul4;
+    @include media (xs){
+        display: none;}
+    @include media(sm){
+        display: none;}
+    @include media(md){
+            display: none;}
+    }
+.texto-encima{
+    @extend .titulo-encima;
+    height: 10em;
+    top: 35%;
+    left: 10%}
+
+/* SECCION AL MEDIO */
+.m{
+    background-color: $fondo-azul4;
+    width: 100%;
+    height: 50em;
+    padding-left: $con-margen;
+}
+.alto{height: 16em;}
+
+/* ULTIMA SECCION */
+.titulo-ultimo{
+    background-color: $fondo-azul4;
+    width: 15em;
+    height: 3em;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    @include media (xs){
+        display: none;}
+    @include media(sm){
+        display: none;}
+    @include media(md){
+            display: none;}
+}
+
+.index-mobile{
+    display: flex;
+    justify-content: center;
+    display: block;
+}
+.titulo-mobile{
+    text-align: center;
+    width: 13em;
+    height: 1.5em;
+    top: 40%;
+    color: white;
+    background-color: $fondo-azul4;
+    @include media (xs){
+        display: inline-flexbox;
+    }
+    @include media(sm){
+        display: inline-flexbox;
+    }
+    @include media(md){
+        display: none;
+    }
+    @include media(lg){
+        display: none;
+    }    
+}
+.texto-mobile{
+    @extend .titulo-mobile;
+    width: 13em;
+    height: 10em;
+    top:20%;
+}
+.titulo-ultimo-mobile{
+    @extend .titulo-ultimo;
+    position: relative;
+    margin-top: 5%;
+    left: 0%;
+    width: 12.5em;
+    height: 4em;
+    color: white;
+    text-align: center;
+    @include media (xs){
+        display:flex;
+    }
+    @include media(sm){
+        display: flex;
+    }
+    @include media(md){
+        display: none;
+    }
+    @include media(lg){
+        display: none;
+    }   
+}

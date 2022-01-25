@@ -1,0 +1,113 @@
+@import "_Opiniones.scss";
+/* MARGENES */
+$con-margen: 2em;
+$margen-grueso: 6em;
+.correccion_alto{min-height: 200px}
+.con-margen{margin-top: $con-margen;}
+.margen-izquierdo{margin-left: $margen-grueso;
+    @include media (xs){
+        margin-left: 0%;
+    }
+}
+.con-margen-grueso{margin-top: $margen-grueso;}
+.con-espacio-grueso{padding-top: $margen-grueso;}
+.ordenar{justify-content: space-around;}
+.recortar{max-height: 40em;}
+/* COLORES DE FONDO ----- EJERCICIO DE MAPS */
+$colors:(
+    azul: #ADE8F4,
+    azul2: #48CAE4 ,
+    azul3: #CAF0F8,
+    azul4: #023E8A,
+    negro: black);
+@each $name-color, $bgcolor in $colors{
+    .fondo-#{$name-color}{
+        background-color: $bgcolor;
+    }
+}
+/* ---------------------------------------------- */
+$fondo-azul: #ADE8F4;
+$fondo-azul2: #48CAE4 ;
+$fondo-azul3: #CAF0F8;
+$fondo-azul4: #023E8A;
+$fondo-negro: black;
+.fondo-1{
+    width: 100%;
+    height: 100%}
+
+/* COLORES Y TIPOS DE TEXTO */
+body{text-decoration: none}
+.sindeco{text-decoration: none}
+.texto-blanco{color: white}
+.texto-negro{color: black}
+span{font-weight: bold}
+/* ENCABEZADO */
+header{
+    background-color: $fondo-azul3;
+    height: 6em;
+    .navbar-collapse{
+        background-color: $fondo-azul3;
+    }
+    .logo{
+    width: 5em;
+    padding: .5em;
+    }
+}
+
+/* ANIMACION AUMENTO DE IMAGENES */
+@keyframes aumento_imagenes{
+    0%{transform: scale(1,1);}
+    50%{transform: scale(.5,.5);}
+    100%{transform: scale(1,1);}
+}
+/* PIE DE PAGINA */
+.redes{
+    @include media (xs){
+        width: .2em;
+}}
+.pie-de-pagina{
+    background-color: $fondo-azul3;
+    text-decoration: none;
+    color: black;
+    height: 3.5em;
+    @include media (xs){
+        height: 6em;
+}
+}
+
+/* BOTON DE WHATSAPP */
+.boton--contacto{
+    position: fixed;
+    right: 1%;
+    bottom: 10%;
+    &:hover{
+        animation-name: rotacion_logo;
+        animation-duration: 3s;
+        animation-timing-function: ease;
+    }
+}
+/* --------------------------------------------------- */
+@keyframes rotacion_logo{
+    0%{ transform: rotate(0deg);}
+    50%{ transform: rotate(20deg);}
+    100%{ transform: rotate(0deg);}
+}
+.hidden{
+    @include media (xs){
+        display: none;
+    }
+    @include media(sm){
+        display: none;
+    } 
+}
+.titulo::before{
+    @include media (xs){
+        position: relative;
+    }
+    @include media(sm){
+        position: relative;
+    }
+}
+.titulo::after{
+    @extend .titulo::before
+}

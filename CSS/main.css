@@ -1,0 +1,955 @@
+/* ------------EJERCICIO CON MIXIN-------------- */
+/* Variables */
+/* Mixin */
+/* Llamo a una clase */
+.texto {
+  font-size: 1.2 rem;
+  color: black; }
+  @media (max-width: 320px) {
+    .texto {
+      font-size: .8 rem; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .texto {
+      font-size: 1 rem; } }
+  @media (min-width: 1025px) {
+    .texto {
+      font-size: 1.1 rem;
+      color: white; } }
+
+/* MARGENES */
+.correccion_alto {
+  min-height: 200px; }
+
+.con-margen {
+  margin-top: 2em; }
+
+.margen-izquierdo {
+  margin-left: 6em; }
+  @media (max-width: 320px) {
+    .margen-izquierdo {
+      margin-left: 0%; } }
+
+.con-margen-grueso {
+  margin-top: 6em; }
+
+.con-espacio-grueso {
+  padding-top: 6em; }
+
+.ordenar {
+  justify-content: space-around; }
+
+.recortar {
+  max-height: 40em; }
+
+/* COLORES DE FONDO ----- EJERCICIO DE MAPS */
+.fondo-azul {
+  background-color: #ADE8F4; }
+
+.fondo-azul2 {
+  background-color: #48CAE4; }
+
+.fondo-azul3 {
+  background-color: #CAF0F8; }
+
+.fondo-azul4 {
+  background-color: #023E8A; }
+
+.fondo-negro {
+  background-color: black; }
+
+/* ---------------------------------------------- */
+.fondo-1 {
+  width: 100%;
+  height: 100%; }
+
+/* COLORES Y TIPOS DE TEXTO */
+body {
+  text-decoration: none; }
+
+.sindeco {
+  text-decoration: none; }
+
+.texto-blanco {
+  color: white; }
+
+.texto-negro {
+  color: black; }
+
+span {
+  font-weight: bold; }
+
+/* ENCABEZADO */
+header {
+  background-color: #CAF0F8;
+  height: 6em; }
+  header .navbar-collapse {
+    background-color: #CAF0F8; }
+  header .logo {
+    width: 5em;
+    padding: .5em; }
+
+/* ANIMACION AUMENTO DE IMAGENES */
+@keyframes aumento_imagenes {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 0.5); }
+  100% {
+    transform: scale(1, 1); } }
+
+/* PIE DE PAGINA */
+@media (max-width: 320px) {
+  .redes {
+    width: .2em; } }
+
+.pie-de-pagina {
+  background-color: #CAF0F8;
+  text-decoration: none;
+  color: black;
+  height: 3.5em; }
+  @media (max-width: 320px) {
+    .pie-de-pagina {
+      height: 6em; } }
+
+/* BOTON DE WHATSAPP */
+.boton--contacto {
+  position: fixed;
+  right: 1%;
+  bottom: 10%; }
+  .boton--contacto:hover {
+    animation-name: rotacion_logo;
+    animation-duration: 3s;
+    animation-timing-function: ease; }
+
+/* --------------------------------------------------- */
+@keyframes rotacion_logo {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(20deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@media (max-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .hidden {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+/* ------------EJERCICIO CON MIXIN-------------- */
+/* Variables */
+/* Mixin */
+/* Llamo a una clase */
+.texto {
+  font-size: 1.2 rem;
+  color: black; }
+  @media (max-width: 320px) {
+    .texto {
+      font-size: .8 rem; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .texto {
+      font-size: 1 rem; } }
+  @media (min-width: 1025px) {
+    .texto {
+      font-size: 1.1 rem;
+      color: white; } }
+
+/* MARGENES */
+.correccion_alto {
+  min-height: 200px; }
+
+.con-margen {
+  margin-top: 2em; }
+
+.margen-izquierdo {
+  margin-left: 6em; }
+  @media (max-width: 320px) {
+    .margen-izquierdo {
+      margin-left: 0%; } }
+
+.con-margen-grueso {
+  margin-top: 6em; }
+
+.con-espacio-grueso {
+  padding-top: 6em; }
+
+.ordenar {
+  justify-content: space-around; }
+
+.recortar {
+  max-height: 40em; }
+
+/* COLORES DE FONDO ----- EJERCICIO DE MAPS */
+.fondo-azul {
+  background-color: #ADE8F4; }
+
+.fondo-azul2 {
+  background-color: #48CAE4; }
+
+.fondo-azul3 {
+  background-color: #CAF0F8; }
+
+.fondo-azul4 {
+  background-color: #023E8A; }
+
+.fondo-negro {
+  background-color: black; }
+
+/* ---------------------------------------------- */
+.fondo-1 {
+  width: 100%;
+  height: 100%; }
+
+/* COLORES Y TIPOS DE TEXTO */
+body {
+  text-decoration: none; }
+
+.sindeco {
+  text-decoration: none; }
+
+.texto-blanco {
+  color: white; }
+
+.texto-negro {
+  color: black; }
+
+span {
+  font-weight: bold; }
+
+/* ENCABEZADO */
+header {
+  background-color: #CAF0F8;
+  height: 6em; }
+  header .navbar-collapse {
+    background-color: #CAF0F8; }
+  header .logo {
+    width: 5em;
+    padding: .5em; }
+
+/* ANIMACION AUMENTO DE IMAGENES */
+@keyframes aumento_imagenes {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 0.5); }
+  100% {
+    transform: scale(1, 1); } }
+
+/* PIE DE PAGINA */
+@media (max-width: 320px) {
+  .redes {
+    width: .2em; } }
+
+.pie-de-pagina {
+  background-color: #CAF0F8;
+  text-decoration: none;
+  color: black;
+  height: 3.5em; }
+  @media (max-width: 320px) {
+    .pie-de-pagina {
+      height: 6em; } }
+
+/* BOTON DE WHATSAPP */
+.boton--contacto {
+  position: fixed;
+  right: 1%;
+  bottom: 10%; }
+  .boton--contacto:hover {
+    animation-name: rotacion_logo;
+    animation-duration: 3s;
+    animation-timing-function: ease; }
+
+/* --------------------------------------------------- */
+@keyframes rotacion_logo {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(20deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@media (max-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .hidden {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+/* -------------------EJERCICIO DE EXTEND----------------- */
+.contenedor {
+  color: #CAF0F8;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-top: 5em; }
+
+.titulo-encima, .texto-encima {
+  width: 15em;
+  height: 2em;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  background-color: #023E8A; }
+  @media (max-width: 320px) {
+    .titulo-encima, .texto-encima {
+      display: none; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .titulo-encima, .texto-encima {
+      display: none; } }
+
+.texto-encima {
+  height: 10em;
+  top: 35%;
+  left: 10%; }
+
+/* SECCION AL MEDIO */
+.m {
+  background-color: #023E8A;
+  width: 100%;
+  height: 50em;
+  padding-left: 2em; }
+
+.alto {
+  height: 16em; }
+
+/* ULTIMA SECCION */
+.titulo-ultimo, .titulo-ultimo-mobile {
+  background-color: #023E8A;
+  width: 15em;
+  height: 3em;
+  position: absolute;
+  top: 20%;
+  left: 10%; }
+  @media (max-width: 320px) {
+    .titulo-ultimo, .titulo-ultimo-mobile {
+      display: none; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .titulo-ultimo, .titulo-ultimo-mobile {
+      display: none; } }
+
+.index-mobile {
+  display: flex;
+  justify-content: center;
+  display: block; }
+
+.titulo-mobile, .texto-mobile {
+  text-align: center;
+  width: 13em;
+  height: 1.5em;
+  top: 40%;
+  color: white;
+  background-color: #023E8A; }
+  @media (max-width: 320px) {
+    .titulo-mobile, .texto-mobile {
+      display: inline-flexbox; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .titulo-mobile, .texto-mobile {
+      display: inline-flexbox; } }
+  @media (min-width: 1025px) {
+    .titulo-mobile, .texto-mobile {
+      display: none; } }
+
+.texto-mobile {
+  width: 13em;
+  height: 10em;
+  top: 20%; }
+
+.titulo-ultimo-mobile {
+  position: relative;
+  margin-top: 5%;
+  left: 0%;
+  width: 12.5em;
+  height: 4em;
+  color: white;
+  text-align: center; }
+  @media (max-width: 320px) {
+    .titulo-ultimo-mobile {
+      display: flex; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .titulo-ultimo-mobile {
+      display: flex; } }
+  @media (min-width: 1025px) {
+    .titulo-ultimo-mobile {
+      display: none; } }
+
+/* ------------EJERCICIO CON MIXIN-------------- */
+/* Variables */
+/* Mixin */
+/* Llamo a una clase */
+.texto {
+  font-size: 1.2 rem;
+  color: black; }
+  @media (max-width: 320px) {
+    .texto {
+      font-size: .8 rem; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .texto {
+      font-size: 1 rem; } }
+  @media (min-width: 1025px) {
+    .texto {
+      font-size: 1.1 rem;
+      color: white; } }
+
+/* MARGENES */
+.correccion_alto {
+  min-height: 200px; }
+
+.con-margen {
+  margin-top: 2em; }
+
+.margen-izquierdo {
+  margin-left: 6em; }
+  @media (max-width: 320px) {
+    .margen-izquierdo {
+      margin-left: 0%; } }
+
+.con-margen-grueso {
+  margin-top: 6em; }
+
+.con-espacio-grueso {
+  padding-top: 6em; }
+
+.ordenar {
+  justify-content: space-around; }
+
+.recortar {
+  max-height: 40em; }
+
+/* COLORES DE FONDO ----- EJERCICIO DE MAPS */
+.fondo-azul {
+  background-color: #ADE8F4; }
+
+.fondo-azul2 {
+  background-color: #48CAE4; }
+
+.fondo-azul3 {
+  background-color: #CAF0F8; }
+
+.fondo-azul4 {
+  background-color: #023E8A; }
+
+.fondo-negro {
+  background-color: black; }
+
+/* ---------------------------------------------- */
+.fondo-1 {
+  width: 100%;
+  height: 100%; }
+
+/* COLORES Y TIPOS DE TEXTO */
+body {
+  text-decoration: none; }
+
+.sindeco {
+  text-decoration: none; }
+
+.texto-blanco {
+  color: white; }
+
+.texto-negro {
+  color: black; }
+
+span {
+  font-weight: bold; }
+
+/* ENCABEZADO */
+header {
+  background-color: #CAF0F8;
+  height: 6em; }
+  header .navbar-collapse {
+    background-color: #CAF0F8; }
+  header .logo {
+    width: 5em;
+    padding: .5em; }
+
+/* ANIMACION AUMENTO DE IMAGENES */
+@keyframes aumento_imagenes {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 0.5); }
+  100% {
+    transform: scale(1, 1); } }
+
+/* PIE DE PAGINA */
+@media (max-width: 320px) {
+  .redes {
+    width: .2em; } }
+
+.pie-de-pagina {
+  background-color: #CAF0F8;
+  text-decoration: none;
+  color: black;
+  height: 3.5em; }
+  @media (max-width: 320px) {
+    .pie-de-pagina {
+      height: 6em; } }
+
+/* BOTON DE WHATSAPP */
+.boton--contacto {
+  position: fixed;
+  right: 1%;
+  bottom: 10%; }
+  .boton--contacto:hover {
+    animation-name: rotacion_logo;
+    animation-duration: 3s;
+    animation-timing-function: ease; }
+
+/* --------------------------------------------------- */
+@keyframes rotacion_logo {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(20deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@media (max-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .hidden {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+/* ------------EJERCICIO CON MIXIN-------------- */
+/* Variables */
+/* Mixin */
+/* Llamo a una clase */
+.texto {
+  font-size: 1.2 rem;
+  color: black; }
+  @media (max-width: 320px) {
+    .texto {
+      font-size: .8 rem; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .texto {
+      font-size: 1 rem; } }
+  @media (min-width: 1025px) {
+    .texto {
+      font-size: 1.1 rem;
+      color: white; } }
+
+.scroll {
+  max-width: 100%; }
+
+.texto-nosotros {
+  font-size: bold; }
+
+.alto-nosotros {
+  height: 28em; }
+
+@media (max-width: 320px) {
+  .profe-mobile {
+    display: block;
+    width: 20%; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .profe-mobile {
+    display: none; } }
+
+@media (min-width: 1025px) {
+  .profe-mobile {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .profes {
+    display: none; } }
+
+/* ------------EJERCICIO CON MIXIN-------------- */
+/* Variables */
+/* Mixin */
+/* Llamo a una clase */
+.texto {
+  font-size: 1.2 rem;
+  color: black; }
+  @media (max-width: 320px) {
+    .texto {
+      font-size: .8 rem; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .texto {
+      font-size: 1 rem; } }
+  @media (min-width: 1025px) {
+    .texto {
+      font-size: 1.1 rem;
+      color: white; } }
+
+/* MARGENES */
+.correccion_alto {
+  min-height: 200px; }
+
+.con-margen {
+  margin-top: 2em; }
+
+.margen-izquierdo {
+  margin-left: 6em; }
+  @media (max-width: 320px) {
+    .margen-izquierdo {
+      margin-left: 0%; } }
+
+.con-margen-grueso {
+  margin-top: 6em; }
+
+.con-espacio-grueso {
+  padding-top: 6em; }
+
+.ordenar {
+  justify-content: space-around; }
+
+.recortar {
+  max-height: 40em; }
+
+/* COLORES DE FONDO ----- EJERCICIO DE MAPS */
+.fondo-azul {
+  background-color: #ADE8F4; }
+
+.fondo-azul2 {
+  background-color: #48CAE4; }
+
+.fondo-azul3 {
+  background-color: #CAF0F8; }
+
+.fondo-azul4 {
+  background-color: #023E8A; }
+
+.fondo-negro {
+  background-color: black; }
+
+/* ---------------------------------------------- */
+.fondo-1 {
+  width: 100%;
+  height: 100%; }
+
+/* COLORES Y TIPOS DE TEXTO */
+body {
+  text-decoration: none; }
+
+.sindeco {
+  text-decoration: none; }
+
+.texto-blanco {
+  color: white; }
+
+.texto-negro {
+  color: black; }
+
+span {
+  font-weight: bold; }
+
+/* ENCABEZADO */
+header {
+  background-color: #CAF0F8;
+  height: 6em; }
+  header .navbar-collapse {
+    background-color: #CAF0F8; }
+  header .logo {
+    width: 5em;
+    padding: .5em; }
+
+/* ANIMACION AUMENTO DE IMAGENES */
+@keyframes aumento_imagenes {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 0.5); }
+  100% {
+    transform: scale(1, 1); } }
+
+/* PIE DE PAGINA */
+@media (max-width: 320px) {
+  .redes {
+    width: .2em; } }
+
+.pie-de-pagina {
+  background-color: #CAF0F8;
+  text-decoration: none;
+  color: black;
+  height: 3.5em; }
+  @media (max-width: 320px) {
+    .pie-de-pagina {
+      height: 6em; } }
+
+/* BOTON DE WHATSAPP */
+.boton--contacto {
+  position: fixed;
+  right: 1%;
+  bottom: 10%; }
+  .boton--contacto:hover {
+    animation-name: rotacion_logo;
+    animation-duration: 3s;
+    animation-timing-function: ease; }
+
+/* --------------------------------------------------- */
+@keyframes rotacion_logo {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(20deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@media (max-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .hidden {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+.container-cursos {
+  margin-top: 2em; }
+
+.aumento:hover {
+  animation-name: aumento_imagenes;
+  animation-duration: 3s;
+  animation-timing-function: ease; }
+
+.img1 {
+  width: fit-content; }
+
+.img2 {
+  width: fit-content; }
+
+.img3 {
+  width: fit-content; }
+
+.img4 {
+  width: fit-content; }
+
+.img5 {
+  width: fit-content; }
+
+.img6 {
+  width: fit-content; }
+
+.img7 {
+  width: fit-content; }
+
+.img8 {
+  width: fit-content; }
+
+.img9 {
+  width: fit-content; }
+
+.img10 {
+  width: fit-content; }
+
+/* ------------EJERCICIO CON MIXIN-------------- */
+/* Variables */
+/* Mixin */
+/* Llamo a una clase */
+.texto {
+  font-size: 1.2 rem;
+  color: black; }
+  @media (max-width: 320px) {
+    .texto {
+      font-size: .8 rem; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .texto {
+      font-size: 1 rem; } }
+  @media (min-width: 1025px) {
+    .texto {
+      font-size: 1.1 rem;
+      color: white; } }
+
+/* ------------EJERCICIO CON MIXIN-------------- */
+/* Variables */
+/* Mixin */
+/* Llamo a una clase */
+.texto {
+  font-size: 1.2 rem;
+  color: black; }
+  @media (max-width: 320px) {
+    .texto {
+      font-size: .8 rem; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .texto {
+      font-size: 1 rem; } }
+  @media (min-width: 1025px) {
+    .texto {
+      font-size: 1.1 rem;
+      color: white; } }
+
+/* MARGENES */
+.correccion_alto {
+  min-height: 200px; }
+
+.con-margen {
+  margin-top: 2em; }
+
+.margen-izquierdo {
+  margin-left: 6em; }
+  @media (max-width: 320px) {
+    .margen-izquierdo {
+      margin-left: 0%; } }
+
+.con-margen-grueso {
+  margin-top: 6em; }
+
+.con-espacio-grueso {
+  padding-top: 6em; }
+
+.ordenar {
+  justify-content: space-around; }
+
+.recortar {
+  max-height: 40em; }
+
+/* COLORES DE FONDO ----- EJERCICIO DE MAPS */
+.fondo-azul {
+  background-color: #ADE8F4; }
+
+.fondo-azul2 {
+  background-color: #48CAE4; }
+
+.fondo-azul3 {
+  background-color: #CAF0F8; }
+
+.fondo-azul4 {
+  background-color: #023E8A; }
+
+.fondo-negro {
+  background-color: black; }
+
+/* ---------------------------------------------- */
+.fondo-1 {
+  width: 100%;
+  height: 100%; }
+
+/* COLORES Y TIPOS DE TEXTO */
+body {
+  text-decoration: none; }
+
+.sindeco {
+  text-decoration: none; }
+
+.texto-blanco {
+  color: white; }
+
+.texto-negro {
+  color: black; }
+
+span {
+  font-weight: bold; }
+
+/* ENCABEZADO */
+header {
+  background-color: #CAF0F8;
+  height: 6em; }
+  header .navbar-collapse {
+    background-color: #CAF0F8; }
+  header .logo {
+    width: 5em;
+    padding: .5em; }
+
+/* ANIMACION AUMENTO DE IMAGENES */
+@keyframes aumento_imagenes {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(0.5, 0.5); }
+  100% {
+    transform: scale(1, 1); } }
+
+/* PIE DE PAGINA */
+@media (max-width: 320px) {
+  .redes {
+    width: .2em; } }
+
+.pie-de-pagina {
+  background-color: #CAF0F8;
+  text-decoration: none;
+  color: black;
+  height: 3.5em; }
+  @media (max-width: 320px) {
+    .pie-de-pagina {
+      height: 6em; } }
+
+/* BOTON DE WHATSAPP */
+.boton--contacto {
+  position: fixed;
+  right: 1%;
+  bottom: 10%; }
+  .boton--contacto:hover {
+    animation-name: rotacion_logo;
+    animation-duration: 3s;
+    animation-timing-function: ease; }
+
+/* --------------------------------------------------- */
+@keyframes rotacion_logo {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(20deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@media (max-width: 320px) {
+  .hidden {
+    display: none; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .hidden {
+    display: none; } }
+
+@media (max-width: 320px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+@media (min-width: 321px) and (max-width: 768px) {
+  .titulo::before, .titulo::after {
+    position: relative; } }
+
+.formulario {
+  background-color: #023E8A;
+  border: solid 2px black;
+  top: 20%;
+  right: 10%; }
+  @media (max-width: 320px) {
+    .formulario {
+      top: 15%;
+      right: 0%; } }
+  @media (min-width: 321px) and (max-width: 768px) {
+    .formulario {
+      top: 15%;
+      right: 0%; } }
+
+.sin_margen {
+  margin-top: 2em; }
